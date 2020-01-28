@@ -14,7 +14,7 @@
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/scripts.js"></script>
 
-  <title>Web Template</title>
+  <title>Address Book</title>
 </head>
 
 <body>
@@ -27,17 +27,29 @@
         <form id="new-contact">
           <div class="form-group">
             <label for="new-first-name">First Name</label>
-            <input type="text" class="form-control" id="new-first-name">
+            <input type="text" class="form-control" id="new-first-name" value="Dan">
           </div>
           <div class="form-group">
             <label for="new-last-name">Last Name</label>
-            <input type="text" class="form-control" id="new-last-name">
+            <input type="text" class="form-control" id="new-last-name" value="Then Man">
           </div>
           <div class="form-group">
             <label for="new-phone-number">Phone Number</label>
-            <input type="text" class="form-control" id="new-phone-number">
+            <input type="text" class="form-control" id="new-phone-number" value="555-555-5555">
           </div>
-          <button type="submit" class="btn-primary">Add</button>
+          <div class="form-group">
+            <label for="new-email-work">Work Email</label>
+            <input type="text" class="form-control" id="new-email-work" value="work@email.com">
+          </div>
+          <div class="form-group">
+            <label for="new-email-personal">Personal Email</label>
+            <input type="text" class="form-control" id="new-email-personal" value="">
+          </div>
+          <div class="form-group">
+            <label for="new-address">Address</label>
+            <input type="text" class="form-control" id="new-address" value="5821 north street, in a town">
+          </div>
+          <button type="submit" class="btn-primary btn-lg btn-block">Add</button>
         </form>
         <hr>
         <h2>Contacts:</h2>
@@ -49,6 +61,10 @@
           <p>First Name: <span class="first-name"></span></p>
           <p>Last Name: <span class="last-name"></span></p>
           <p>Phone Number: <span class="phone-number"></span></p>
+          <p>Work E-Mail: <span class="email-work"></span></p>
+          <p>Personal E-Mail: <span class="email-personal"></span></p>
+          <p>Address: <span class="address"></span></p>
+
           <div id="buttons">
           </div>
         </div>
